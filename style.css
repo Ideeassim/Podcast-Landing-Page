@@ -1,6 +1,142 @@
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    /* CSS */
+    
+  
 body{
-    background-image: url(./assets/mobile/image-rev4.jpg);
+    background-image: url(./assets/mobile/image-host-rev5.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: center; */
+    background-size: 110% 41.6rem;
+    
+
+}  
+  body,
+::after,
+::before {
+  box-sizing: border-box !important;
+  padding: 0px !important;
+  margin: 0px !important;
 }
+.bg-dots{
+    display: none;
+}
+.shape{
+    display: none;
+}
+}
+
+
+/* mobile landscape */
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    /* CSS */
+    body{
+        background-image: url(./assets/mobile/image-host-rev5.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 30rem;
+        
+    
+    }  
+      body,
+    ::after,
+    ::before {
+      box-sizing: border-box !important;
+      padding: 0px !important;
+      margin: 0px !important;
+    }
+    .bg-dots{
+        display: none;
+    }
+    .shape{
+        display: none;
+    }
+  }
+
+/* TABLET */
+/* portrait */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    /* CSS */
+    body{
+        background-image: url(./assets/tablet/image-host.jpg);
+        background-size: 30rem 53rem;
+        background-position-x:110% ;
+      
+        position: relative;
+    }
+
+    .rectangle{
+        background-color: #121725;
+        width: 110%;
+        height: 7.5rem;     
+        position:absolute;
+         top: 52rem;
+        left: -1rem;
+       
+    }
+
+    .big-square{
+        height: 35rem;
+        width: 39rem;
+        background-color: #121725;
+       
+        position: absolute;
+        top: 22.5rem;
+        left: -1rem;
+    }
+
+    .small-square{
+        position: absolute;
+        width: 23rem;
+        height: 23rem;
+        top: 0rem;
+        left: -1rem;
+        background-color: #121725;
+    }
+    .bg-dots{
+        height: 8rem;
+        width: 12rem;
+        position: absolute;
+        top: 49rem;
+        left: 41rem;       
+        object-fit: contain;
+    }
+    .bg-dots>img{
+        max-width: 100%;
+    }
+  }
+
+  /* landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    body{
+        background-image: url(./assets/mobile/image-host-rev5.jpg);
+        background-repeat: no-repeat;
+        background-size: 45% 52.5rem;
+        background-position-x:100% ;
+    
+    }  
+      body,
+    ::after,
+    ::before {
+      box-sizing: border-box !important;
+      padding: 0px !important;
+      margin: 0px !important;
+    }
+    .small-square{
+        width: 37rem;
+    }
+    .big-square{
+        width: 50rem;
+    }
+    .rectangle{
+        width: 180%;
+    }
+    .bg-dots{
+        height: 10rem;
+        width: 14rem;
+        top: 49rem;
+        left: 55rem;
+    }
+  }
