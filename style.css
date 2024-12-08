@@ -1,4 +1,55 @@
 
+.contents{
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid #C2CBE5;
+}
+
+/* section 2 */
+.textBox{
+    opacity: 1;
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    height: 13.7rem;
+    border: solid red;
+    margin-bottom: 0%;
+  }
+  .publish>span{
+    color:#54E6AF ;
+    
+  }
+  .publish{
+  font-family: 'Chivo';
+  Font-weight: 100;
+  Font-size: 1.75rem;
+  margin-top: 0.188rem;
+  letter-spacing: 0rem;
+  text-align: center;
+  margin-bottom: 0%;
+  line-height: 2.125rem;
+  }
+  .upload{
+    font-family: 'Chivo';
+    font-size: 0.9rem;
+    text-align: center;
+    color: #C2CBE5;
+    font-weight: 100;
+    margin-bottom: 0%;
+    line-height: 1.5rem;
+  }
+  .text-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
 @media (min-width: 320px) and (max-width: 480px) {
   
     /* CSS */
@@ -8,7 +59,7 @@ body{
     background-image: url(./assets/mobile/image-host-rev5.jpg);
     background-repeat: no-repeat;
     background-size: 110% 41.6rem;
-    
+    position: relative;
 
 }  
   body,
@@ -18,12 +69,25 @@ body{
   padding: 0px !important;
   margin: 0px !important;
 }
+.inner{
+    width: 23.4rem;
+    height: 41.6rem;   
+  background: rgb(18, 23, 37);
+  opacity: 0.8
+  }
+
 .bg-dots{
     display: none;
 }
 .shape{
     display: none;
 }
+/* .contents{
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+} */
 }
 
 
@@ -93,6 +157,7 @@ body{
         top: 0rem;
         left: -1rem;
         background-color: #121725;
+        z-index: -1;
     }
     .bg-dots{
         height: 8rem;
@@ -104,6 +169,13 @@ body{
     }
     .bg-dots>img{
         max-width: 100%;
+    }
+    .bg-elements{
+        z-index: -1;
+    }
+    .text{
+        color: white;
+        z-index: 1;
     }
   }
 
@@ -138,5 +210,12 @@ body{
         width: 14rem;
         top: 49rem;
         left: 55rem;
+    }
+    .bg-elements{
+        z-index: -1;
+    }
+    .text{
+        color: white;
+        z-index: 1;
     }
   }
