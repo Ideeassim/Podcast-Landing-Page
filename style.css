@@ -2,7 +2,7 @@
 .contents{
     z-index: 1;
     position: absolute;
-    top: 20%;
+    top: 18%;
     left: 10%;
     display: flex;
     flex-direction: column;
@@ -46,8 +46,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.8rem;
   }
 
+  /* logo section */
+  .social-logo{
+    display: flex;
+    width: 17rem;
+    border: solid blue;
+    justify-content: space-between;
+   
+    
+  }
+  .social-logo>div{
+    width: 3rem;
+    border: solid lawngreen;
+    height: 2rem;
+  }
+  .social-logo>div>img{
+    max-width: 100%;
+  }
 
 
 @media (min-width: 320px) and (max-width: 480px) {
